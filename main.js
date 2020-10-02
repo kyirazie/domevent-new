@@ -25,3 +25,14 @@ const hideaboutAlert = () => {
 }
 
 
+//kita akan buat elemen HTML menggunakan Javascript
+//tangkap element
+let gallery = document.getElementById('container-gallery')
+let img = 100
+
+//insert html syntax into gallery
+for (let i = 0; i <= 30; i++) {
+    gallery.innerHTML += `
+    <img src="https://picsum.photos/seed/${img++}/100" />
+`
+}

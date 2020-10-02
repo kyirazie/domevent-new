@@ -160,25 +160,29 @@ a{
 
 }
 
-.about_box1{
+.box1Images{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
     grid-template: box1;
-    background-image: url(https://picsum.photos/seed/187/900);
+    grid-template: box4 ;
     background-size: cover;
     background-position:center ;
     border-radius: 0 0 200px 0;
     background-attachment: fixed;
 }
-
 .about_box2{
     grid-template: box2;
 }
 .about_box3{
     grid-template: box3;
 }
-.about_box4{
+.box4Images{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
     grid-template: box4;
     grid-template: box1;
-    background-image: url(https://picsum.photos/seed/150/900);
     background-size: cover;
     background-position:center ;
     border-radius: 200px 0 0 0;
@@ -187,14 +191,33 @@ a{
 
 
 .contact{
-    background-image: url(https://picsum.photos/seed/258/900);
+    background-image: url(https://picsum.photos/seed/255/900);
 }
 .gallery{
-    background-image: url(https://picsum.photos/seed/716/900);
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center; 
+}
+
+.container-gallery{
+    display: flex;
+    padding: 10px;
+    background-color: darkorchid;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    transition: .5s;
+}
+
+.container-gallery img:hover {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+
 
 }
+
 .galicon{
     font-size: 8rem;
     color: white;
